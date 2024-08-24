@@ -11,7 +11,7 @@ const activities = Array(18).fill(null).map((_, i) => ({
   description: `This is a fun kid-friendly activity in Escondido. Kids of all ages will enjoy this exciting adventure!`
 }))
 
-export default function LandingPage() {
+export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="mb-12 text-center">
