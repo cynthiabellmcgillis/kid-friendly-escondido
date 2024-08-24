@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <header className="mb-12 text-center">
-        <h1 className="text-4xl font-bold text-primary md:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl">
           Kid Friendly Escondido
         </h1>
       </header>
@@ -27,7 +27,7 @@ export default function Home() {
                 height={200}
                 className="rounded-lg object-cover shadow-md"
               />
-              <h2 className="mt-2 text-lg font-semibold text-primary">{activity.title}</h2>
+              <h2 className="mt-2 text-lg font-semibold text-gray-700">{activity.title}</h2>
             </div>
           ))}
         </div>
