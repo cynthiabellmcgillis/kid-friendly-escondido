@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-// Mock data for activities
 const activities = Array(18).fill(null).map((_, i) => ({
   id: i + 1,
   src: `/placeholder.svg?height=200&width=300`,
