@@ -1,20 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import placeholderImage from './images/coming-soon-placeholder.png'
 
-const activities = [
-  {
-    id: 1,
-    src: "https://sandiegozoowildlifealliance.org/sites/default/files/hero/park-rondavel-gradientT21_0101_004.png",
-    alt: "San Diego Zoo Safari Park",
-    title: "San Diego Zoo Safari Park",
-  },
-  ...Array(17).fill(null).map((_, i) => ({
-    id: i + 2,
-    src: `/placeholder.svg?height=200&width=300`,
-    alt: `Kid-friendly activity ${i + 2}`,
-    title: `Activity ${i + 2}`,
-  }))
-]
+const activities = Array(18).fill(null).map((_, i) => ({
+  id: i + 1,
+  alt: `Kid-friendly activity ${i + 1}`,
+  title: `Activity ${i + 1}`,
+}))
 
 export default function Home() {
   return (
@@ -30,21 +22,13 @@ export default function Home() {
             {activities.map((activity) => (
               <div key={activity.id} className="flex flex-col items-center">
                 <div className="bg-gray-100 p-4 rounded-lg shadow-md">
-                  {activity.id === 1 ? (
-                    <img
-                      src={activity.src}
-                      alt={activity.alt}
-                      className="rounded-lg object-cover w-full h-48"
-                    />
-                  ) : (
-                    <Image
-                      src={activity.src}
-                      alt={activity.alt}
-                      width={300}
-                      height={200}
-                      className="rounded-lg object-cover w-full h-48"
-                    />
-                  )}
+                  <Image
+                    src={placeholderImage}
+                    alt={activity.alt}
+                    width={600}
+                    height={400}
+                    className="rounded-lg object-cover w-full h-48"
+                  />
                 </div>
                 <h2 className="mt-4 text-lg font-semibold text-gray-700">{activity.title}</h2>
               </div>
