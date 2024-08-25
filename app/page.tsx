@@ -15,7 +15,7 @@ const activities: Activity[] = [
     id: 1,
     name: "San Diego Zoo Safari Park",
     link: "https://sdzsafaripark.org/",
-    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypus outside of Australia.",
+    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypuses outside of Australia.",
     imageUrl: "app/images/park-rondavel-gradientT21_0101_004.png"
   },
   {
