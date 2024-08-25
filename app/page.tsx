@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Navigation from './components/Navigation'
 import placeholderImage from './images/coming-soon-placeholder.png'
 
 interface Activity {
@@ -15,24 +16,10 @@ const activities: Activity[] = [
     id: 1,
     name: "San Diego Zoo Safari Park",
     link: "https://sdzsafaripark.org/",
-    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypuses outside of Australia.",
-    imageUrl: "/images/park-rondavel-gradientT21_0101_004.png"
+    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypus outside of Australia.",
+    imageUrl: "https://sandiegozoowildlifealliance.org/sites/default/files/hero/park-rondavel-gradientT21_0101_004.png"
   },
-  {
-    id: 2,
-    name: "Dixon Lake",
-    link: "https://www.escondido.org/dixon-lake",
-    description: "Enjoy fishing, hiking, and picnicking at this scenic lake.",
-    imageUrl: "/images/dixon-lake.jpg"
-  },
-  {
-    id: 3,
-    name: "Escondido Children's Museum",
-    link: "https://www.sdcdm.org/",
-    description: "Interactive exhibits and hands-on learning for kids.",
-    imageUrl: "/images/childrens-museum.jpg"
-  },
-  // Add more activities here...
+  // ... other activities
 ]
 
 // Fill the rest of the 18 slots with empty activities
@@ -46,13 +33,17 @@ while (activities.length < 18) {
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <header className="bg-white py-4 shadow-sm">
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <Link href="/" className="text-xl font-bold text-gray-800">Kid Friendly Escondido</Link>
+          <Navigation />
+        </div>
+      </header>
       <div className="container mx-auto px-4 py-8 flex-grow">
-        <header className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl">
-            Kid-Friendly Escondido
-          </h1>
-        </header>
         <main>
+          <h1 className="text-4xl font-bold text-gray-800 text-center mb-12 md:text-5xl lg:text-6xl">
+            Kid Friendly Escondido
+          </h1>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {activities.map((activity) => (
               <div key={activity.id} className="flex flex-col items-center">
