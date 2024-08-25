@@ -15,8 +15,8 @@ const activities: Activity[] = [
     id: 1,
     name: "San Diego Zoo Safari Park",
     link: "https://sdzsafaripark.org/",
-    description: "Experience wildlife up close at this expansive animal park.",
-    imageUrl: "/images/safari-park.jpg"
+    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypus outside of Australia.",
+    imageUrl: "https://sandiegozoowildlifealliance.org/sites/default/files/hero/park-rondavel-gradientT21_0101_004.png"
   },
   {
     id: 2,
