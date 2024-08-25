@@ -5,8 +5,7 @@ export default function About() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <header className="bg-white py-4 shadow-sm">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-gray-800">Kid Friendly Escondido</Link>
+        <div className="container mx-auto px-4 flex justify-end">
           <Navigation />
         </div>
       </header>
