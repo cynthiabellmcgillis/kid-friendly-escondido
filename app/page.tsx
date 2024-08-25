@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from './components/Navigation'
-import placeholderImage from './images/coming-soon-placeholder.png'
 
 interface Activity {
   id: number;
@@ -16,26 +15,17 @@ const activities: Activity[] = [
     id: 1,
     name: "San Diego Zoo Safari Park",
     link: "https://sdzsafaripark.org/",
-    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypus outside of Australia.",
-    imageUrl: "https://sandiegozoowildlifealliance.org/sites/default/files/hero/park-rondavel-gradientT21_0101_004.png"
+    description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypuses outside of Australia.",
+    imageUrl: "/images/park-rondavel-gradientT21_0101_004.png"
   },
   // ... other activities
 ]
-
-// Fill the rest of the 18 slots with empty activities
-while (activities.length < 18) {
-  activities.push({
-    id: activities.length + 1,
-    name: `Activity ${activities.length + 1}`,
-  })
-}
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <header className="bg-white py-4 shadow-sm">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-gray-800">Kid Friendly Escondido</Link>
+        <div className="container mx-auto px-4 flex justify-end">
           <Navigation />
         </div>
       </header>
@@ -49,7 +39,7 @@ export default function Home() {
               <div key={activity.id} className="flex flex-col items-center">
                 <div className="bg-gray-100 p-4 rounded-lg shadow-md w-full">
                   <Image
-                    src={activity.imageUrl || placeholderImage}
+                    src={activity.imageUrl || '/images/placeholder.png'}
                     alt={activity.name}
                     width={600}
                     height={400}
