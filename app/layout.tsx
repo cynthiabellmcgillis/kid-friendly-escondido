@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Discover kid-friendly activities in Escondido',
     images: [
       {
-        url: 'https://i.imgur.com/a/FFuC5zO.jpg',
+        url: '/Kid Friendly Escondido.png',
         width: 1200,
         height: 630,
         alt: 'Kid Friendly Escondido - Fun activities for children',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kid Friendly Escondido',
     description: 'Discover kid-friendly activities in Escondido',
-    images: ['https://i.imgur.com/kvOwmmr.png'],
+    images: ['/Kid Friendly Escondido.png'],
   },
 }
 
