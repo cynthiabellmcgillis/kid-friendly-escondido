@@ -22,7 +22,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 flex-grow">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold text-gray-800 md:text-5xl lg:text-6xl">
-            Kid-Friendly Escondido
+            Kid Friendly Escondido
           </h1>
         </header>
         <main>
