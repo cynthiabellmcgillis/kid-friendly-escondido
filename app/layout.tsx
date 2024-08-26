@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 
+//Adding some notes here because I'm trying to push a new build.
 export const metadata: Metadata = {
   title: 'Kid-Friendly Escondido',
   description: 'Discover kid-friendly activities in Escondido',
