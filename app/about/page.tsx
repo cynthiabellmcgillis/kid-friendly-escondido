@@ -12,8 +12,18 @@ export default function About() {
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">About Kid Friendly Escondido</h1>
         <div className="prose max-w-none">
-<p>Welcome to Kid-Friendly Escondido, a simple site that shows some of my favorite spots around Escondido, California for families.</p>
-<p>Feedback or have a suggestion for what to add? Tweet me or open a PR.  :smile: </p>
+          <p>Welcome to Kid-Friendly Escondido, a simple site that shows some of my favorite spots around Escondido, California for families.</p>
+          <p>
+            Feedback or have a suggestion for what to add? {' '}
+            <Link href="https://twitter.com/cynthiamcgillis" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+              Tweet me 
+            </Link>{' '}
+            or{' '}
+            <Link href="https://github.com/cynthiabellmcgillis/kid-friendly-escondido" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+              open a PR
+            </Link>
+            . 😃
+          </p>
         </div>
       </main>
       <footer className="bg-gray-100 py-4 mt-8">
