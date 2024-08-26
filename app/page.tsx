@@ -9,7 +9,7 @@ interface Activity {
   name: string;
   link?: string;
   description?: string;
-  imageUrl?: string | StaticImageData;
+  imageUrl?: string;
 }
 
 const activities: Activity[] = [
@@ -18,7 +18,7 @@ const activities: Activity[] = [
     name: "San Diego Zoo Safari Park",
     link: "https://sdzsafaripark.org/",
     description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypuses outside of Australia.",
-    imageUrl: safariParkImage
+    imageUrl: safariParkImage.src
   },
   // Add more activities here if you have them
 ]
@@ -42,7 +42,7 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 flex-grow">
         <main>
           <h1 className="text-4xl font-bold text-gray-800 text-center mb-12 md:text-5xl lg:text-6xl">
-            Kid Friendly Escondido
+            Kid-Friendly Escondido
           </h1>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {activities.map((activity) => (
