@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Navigation from './components/Navigation'
 import placeholderImage from './images/coming-soon-placeholder.png'
 import safariParkImage from './images/park-rondavel-gradientT21_0101_004.png'
+import escoChildrensMuseumImage from './images/escondido-childrens-museum-f0086af1-12cf-487b-87e7-5f65aa52affa-0.jpg'
 
 interface Activity {
   id: number;
@@ -19,6 +20,13 @@ const activities: Activity[] = [
     link: "https://sdzsafaripark.org/",
     description: "A must-see, must-do if you visit Esco. A membership pays for itself after 2 visits & the SP is home to the only 2 platypuses outside of Australia.",
     imageUrl: safariParkImage.src
+  },
+  {
+    id: 2,
+    name: "Children's Discovery Museum ",
+    link: "https://sdcdm.org/",
+    description: "Great for 8 & under, there is an indoor and outdoor area. The museum is a mix of free-play and structured programming. The outdoor water table in the summer is a big hit.",
+    imageUrl: escoChildrensMuseumImage.src
   },
   // Add more activities here if you have them
 ]
