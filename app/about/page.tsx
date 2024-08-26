@@ -13,6 +13,8 @@ export default function About() {
         <h1 className="text-4xl font-bold text-gray-800 mb-6">About Kid Friendly Escondido</h1>
         <div className="prose max-w-none">
           <p>Welcome to Kid-Friendly Escondido, a simple site that shows some of my favorite spots around Escondido, California for families.</p>
+          <br></br>
+  
           <p>
             Feedback or have a suggestion for what to add? {' '}
             <Link href="https://twitter.com/cynthiamcgillis" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
