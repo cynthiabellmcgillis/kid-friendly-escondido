@@ -12,11 +12,8 @@ export default function About() {
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">About Kid Friendly Escondido</h1>
         <div className="prose max-w-none">
-          <p>Welcome to Kid Friendly Escondido, your go-to resource for family-friendly activities in Escondido, California!</p>
-          <p>Our mission is to help families discover the best kid-friendly attractions, events, and hidden gems in our beautiful city. Whether you're a local looking for new adventures or a visitor planning your trip, we've got you covered.</p>
-          <p>We believe that Escondido has so much to offer for children of all ages, and we're passionate about sharing these experiences with you. From parks and museums to special events and local favorites, we curate a diverse list of activities that cater to various interests and age groups.</p>
-          <p>Kid Friendly Escondido is maintained by local parents who love exploring the city with their families. We regularly update our listings and welcome suggestions from our community. If you know of a great kid-friendly spot or event that we haven't covered, please let us know!</p>
-          <p>Thank you for visiting Kid Friendly Escondido. We hope our site helps you create wonderful memories with your family in our amazing city!</p>
+<p>Welcome to Kid-Friendly Escondido, a simple site that shows some of my favorite spots around Escondido, California for families.</p>
+<p>Feedback or have a suggestion for what to add? Tweet me or open a PR.  :smile: </p>
         </div>
       </main>
       <footer className="bg-gray-100 py-4 mt-8">
