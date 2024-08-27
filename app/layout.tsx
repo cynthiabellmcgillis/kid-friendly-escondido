@@ -5,7 +5,6 @@ import { GeistMono } from 'geist/font/mono'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 
-//Adding some notes here because I'm trying to push a new build.
 export const metadata: Metadata = {
   title: 'Kid-Friendly Escondido',
   description: 'Discover kid-friendly activities in Escondido',
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
       {
         url: 'https://opengraph.b-cdn.net/production/images/f6564f81-f3e4-4c44-8cc6-945bd9790008.png?token=GVN8U7PHkfCtn_AgYeox1jqYQjx28lUFd24mua30xjU&height=590&width=1200&expires=33260643549',
         width: 1200,
-        height: 600,
+        height: 590,
         alt: 'Kid-Friendly Escondido',
       },
     ],
@@ -43,8 +42,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className={GeistSans.className}>{children}</body>
-<body className={inter.className}>
+      <body className={GeistSans.className}>
         {children}
         <SpeedInsights />
         <Analytics mode="production" />
