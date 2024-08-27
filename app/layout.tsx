@@ -2,6 +2,8 @@ import './globals.css'
 import { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 //Adding some notes here because I'm trying to push a new build.
 export const metadata: Metadata = {
@@ -42,6 +44,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className={GeistSans.className}>{children}</body>
+<body className={inter.className}>
+        {children}
+        <SpeedInsights />
+        <Analytics mode="production" />
+      </body>
     </html>
   )
 }
