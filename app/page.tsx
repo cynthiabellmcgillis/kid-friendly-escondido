@@ -39,8 +39,8 @@ const activities: Activity[] = [
   // Add more activities here if you have them
 ]
 
-// Fill the rest of the 18 slots with empty activities
-while (activities.length < 18) {
+// Fill the rest of the 12 slots with empty activities
+while (activities.length < 12) {
   activities.push({
     id: activities.length + 1,
     name: `Activity ${activities.length + 1}`,
