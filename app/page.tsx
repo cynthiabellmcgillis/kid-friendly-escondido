@@ -31,7 +31,7 @@ const activities: Activity[] = [
   },
   {
     id: 3,
-    name: "Litlte Lane Playroom ",
+    name: "Little Lane Playroom ",
     link: "https://www.littlelaneplayroom.com/schedule",
     description: "Aesthetic, soft-play area located in North County Mall. Reservations are required for 1 hour play slots.",
     imageUrl: littleLanePlayroomImage.src
