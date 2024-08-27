@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import placeholderImage from './images/coming-soon-placeholder.png'
 import safariParkImage from './images/park-rondavel-gradientT21_0101_004.png'
 import escoChildrensMuseumImage from './images/escondido-childrens-museum-f0086af1-12cf-487b-87e7-5f65aa52affa-0.jpg'
+import littleLanePlayroomImage from './images/little-lane-playroom.jpg'
 
 interface Activity {
   id: number;
@@ -27,6 +28,13 @@ const activities: Activity[] = [
     link: "https://sdcdm.org/",
     description: "Great for 8 & under, there is an indoor and outdoor area. The museum is a mix of free-play and structured programming. The outdoor water table in the summer is a big hit.",
     imageUrl: escoChildrensMuseumImage.src
+  },
+  {
+    id: 3,
+    name: "Litlte Lane Playroom ",
+    link: "https://www.littlelaneplayroom.com/schedule",
+    description: "Aesthetic, soft-play area located in North County Mall. Reservations are required for 1 hour play slots.",
+    imageUrl: littleLanePlayroomImage.src
   },
   // Add more activities here if you have them
 ]
